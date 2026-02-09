@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리미엄 분양 프로젝트 | 공식 홍보관</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">THE PRESTIGE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">사업개요</a></li>
+                    <li><a href="#location">입지환경</a></li>
+                    <li><a href="#plan">평면도</a></li>
+                    <li><a href="#contact" class="btn-highlight">상담신청</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="sub-title">2026년형 프리미엄 주거의 시작</span>
+            <h2>당신이 꿈꾸던 가치,<br>그 이상의 공간을 완성하다</h2>
+            <p>선착순 로열층 동호수 지정 계약 진행 중</p>
+            <div class="scroll-down">▼</div>
+        </div>
+    </section>
+
+    <section id="location" class="section">
+        <div class="container">
+            <h2 class="section-title">PREMIUM LOCATION</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="icon">🚆</div>
+                    <h3>초역세권 프리미엄</h3>
+                    <p>도보 5분 거리의 쾌속 교통망</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌳</div>
+                    <h3>숲세권 라이프</h3>
+                    <p>단지 앞 대규모 중앙공원 인접</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🏫</div>
+                    <h3>명문 학군</h3>
+                    <p>반경 1km 내 초·중·고 밀집</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section dark">
+        <div class="container">
+            <h2 class="section-title">MODEL HOUSE</h2>
+            <p>방문 예약 및 분양가 문의는 아래 양식을 작성해 주세요.</p>
+            
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="userName" placeholder="성함" required>
+                    <input type="tel" id="userPhone" placeholder="연락처 (010-0000-0000)" required>
+                </div>
+                
+                <div class="select-group">
+                    <p>관심 평형대:</p>
+                    <label><input type="radio" name="area" value="59" checked> 59㎡</label>
+                    <label><input type="radio" name="area" value="84"> 84㎡</label>
+                    <label><input type="radio" name="area" value="114"> 114㎡</label>
+                </div>
+
+                <div class="agree-group">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">개인정보 수집 및 마케팅 활용에 동의합니다.</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">상담 예약 신청하기</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>※ 본 사이트의 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.</p>
+            <p>분양문의: 1588-0000 | 책임자: 대표님</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
