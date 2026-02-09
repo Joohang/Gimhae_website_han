@@ -71,3 +71,67 @@ nav a:hover { color: #c0392b; }
 
 /* 6. 푸터 */
 footer { padding: 40px 0; background: #111; color: #777; font-size: 0.9rem; text-align: center; }
+
+
+
+/* 테이블 스타일 */
+.outline-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.outline-table th, .outline-table td { 
+    padding: 15px; border-bottom: 1px solid #ddd; text-align: left; 
+}
+.outline-table th { background: #f8f8f8; width: 30%; font-weight: 700; }
+
+/* 평면도 플레이스홀더 */
+.gray { background: #f4f4f4; }
+.plan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+.plan-img-placeholder { 
+    background: #e0e0e0; height: 300px; display: flex; 
+    align-items: center; justify-content: center; color: #888; border-radius: 8px;
+}
+
+/* --- 모바일 대응 (반응형 디테일) --- */
+@media (max-width: 768px) {
+    /* 헤더 메뉴 숨기거나 세로 배치 (여기선 간결하게 세로 정렬) */
+    header .container { flex-direction: column; gap: 15px; }
+    nav ul { gap: 15px; font-size: 14px; }
+
+    /* 메인 비주얼 텍스트 크기 조정 */
+    .hero h2 { font-size: 2rem; }
+
+    /* 3열 카드를 1열로 변경 */
+    .card-grid { grid-template-columns: 1fr; }
+
+    /* 평면도 2열을 1열로 변경 */
+    .plan-grid { grid-template-columns: 1fr; }
+
+    /* 테이블 가로 스크롤 방지 */
+    .outline-table th { width: 40%; font-size: 14px; }
+    .outline-table td { font-size: 14px; }
+
+    /* 상담 신청 폼 가로 정렬을 세로로 */
+    .input-group { flex-direction: column; }
+}
+
+
+/* 모달 배경 */
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed; z-index: 2000; left: 0; top: 0;
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);
+}
+
+/* 모달 박스 */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; padding: 30px;
+    border-radius: 15px; width: 80%; max-width: 400px;
+    text-align: center; position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.success-icon { font-size: 50px; color: #2ecc71; margin-bottom: 10px; }
+.confirm-btn { 
+    margin-top: 20px; padding: 10px 40px; 
+    background: #c0392b; color: white; border: none; border-radius: 5px; cursor: pointer;
+}
+.close-btn { position: absolute; right: 20px; top: 10px; font-size: 28px; cursor: pointer; }

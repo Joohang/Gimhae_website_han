@@ -6,6 +6,15 @@
     <title>프리미엄 분양 프로젝트 | 공식 홍보관</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="김해 풍경채 프리미엄 | 공식 홍보관">
+    <meta property="og:description" content="2026년형 프리미엄 주거의 시작, 선착순 로열층 동호수 지정 중">
+    <meta property="og:image" content="assets/images/thumb.jpg"> <meta property="og:url" content="https://대표님-깃허브-주소.github.io/">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="김해 풍경채 프리미엄">
+    <meta name="twitter:description" content="상담 신청 및 분양가 안내">
+    <meta name="twitter:image" content="assets/images/thumb.jpg">
 </head>
 <body>
 
@@ -32,6 +41,32 @@
         </div>
     </section>
 
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">PROJECT OVERVIEW</h2>
+            <div class="about-content">
+                <table class="outline-table">
+                    <tr>
+                        <th>사업명</th>
+                        <td>김해 풍경채 프리미엄 신축공사</td>
+                    </tr>
+                    <tr>
+                        <th>대지위치</th>
+                        <td>경상남도 김해시 주요 요충지</td>
+                    </tr>
+                    <tr>
+                        <th>건축규모</th>
+                        <td>지하 2층 ~ 지상 25층, 총 8개동</td>
+                    </tr>
+                    <tr>
+                        <th>세대수</th>
+                        <td>총 840세대 (59㎡ / 84㎡ / 114㎡)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <section id="location" class="section">
         <div class="container">
             <h2 class="section-title">PREMIUM LOCATION</h2>
@@ -50,6 +85,24 @@
                     <div class="icon">🏫</div>
                     <h3>명문 학군</h3>
                     <p>반경 1km 내 초·중·고 밀집</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plan" class="section gray">
+        <div class="container">
+            <h2 class="section-title">FLOOR PLAN</h2>
+            <div class="plan-grid">
+                <div class="plan-item">
+                    <div class="plan-img-placeholder">59㎡ TYPE (이미지 준비 중)</div>
+                    <h3>59㎡ (25평형)</h3>
+                    <p>실속 있는 공간 설계와 채광 중심의 배치</p>
+                </div>
+                <div class="plan-item">
+                    <div class="plan-img-placeholder">84㎡ TYPE (이미지 준비 중)</div>
+                    <h3>84㎡ (34평형)</h3>
+                    <p>선호도 높은 4Bay 판상형 구조</p>
                 </div>
             </div>
         </div>
@@ -82,7 +135,15 @@
             </form>
         </div>
     </section>
-
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="success-icon">✔️</div>
+            <h2>신청이 완료되었습니다!</h2>
+            <p>상담사가 내용을 확인 후<br>빠른 시일 내에 연락드리겠습니다.</p>
+            <button type="button" onclick="closeModal()" class="confirm-btn">확인</button>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <p>※ 본 사이트의 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 차이가 있을 수 있습니다.</p>
@@ -90,6 +151,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
